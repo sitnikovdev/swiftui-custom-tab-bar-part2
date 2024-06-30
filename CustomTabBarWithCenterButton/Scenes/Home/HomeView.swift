@@ -8,10 +8,19 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject private var coordinator: Coordinator
+    
     var body: some View {
         ZStack {
             Color.blue.opacity(0.3)
-            Text("Home View")
+            VStack {
+                Text("Home View")
+                Button {
+                    coordinator.push(.ProductDetail)
+                } label: {
+                    Text("Go To Product Detail")
+                }
+            }
         }
     }
 }

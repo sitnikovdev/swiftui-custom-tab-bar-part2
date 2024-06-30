@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C112E6712C302C4E0082D661 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C112E6702C302C4E0082D661 /* Coordinator.swift */; };
+		C112E6732C302C570082D661 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C112E6722C302C570082D661 /* Route.swift */; };
+		C112E6762C302D840082D661 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C112E6752C302D840082D661 /* ProductDetailView.swift */; };
+		C112E6792C302D960082D661 /* AccountSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C112E6782C302D960082D661 /* AccountSettingsView.swift */; };
 		C14695902C2B9AFD00A75D46 /* CustomTabBarWithCenterButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146958F2C2B9AFD00A75D46 /* CustomTabBarWithCenterButtonApp.swift */; };
 		C14695922C2B9AFD00A75D46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14695912C2B9AFD00A75D46 /* ContentView.swift */; };
 		C14695942C2B9AFE00A75D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14695932C2B9AFE00A75D46 /* Assets.xcassets */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C112E6702C302C4E0082D661 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C112E6722C302C570082D661 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		C112E6752C302D840082D661 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		C112E6782C302D960082D661 /* AccountSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsView.swift; sourceTree = "<group>"; };
 		C146958C2C2B9AFD00A75D46 /* CustomTabBarWithCenterButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBarWithCenterButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C146958F2C2B9AFD00A75D46 /* CustomTabBarWithCenterButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarWithCenterButtonApp.swift; sourceTree = "<group>"; };
 		C14695912C2B9AFD00A75D46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +48,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C112E66F2C302C320082D661 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C112E6702C302C4E0082D661 /* Coordinator.swift */,
+				C112E6722C302C570082D661 /* Route.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C112E6742C302D740082D661 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C112E6752C302D840082D661 /* ProductDetailView.swift */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		C112E6772C302D890082D661 /* AccountSettings */ = {
+			isa = PBXGroup;
+			children = (
+				C112E6782C302D960082D661 /* AccountSettingsView.swift */,
+			);
+			path = AccountSettings;
+			sourceTree = "<group>";
+		};
 		C14695832C2B9AFD00A75D46 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +92,7 @@
 		C146958E2C2B9AFD00A75D46 /* CustomTabBarWithCenterButton */ = {
 			isa = PBXGroup;
 			children = (
+				C112E66F2C302C320082D661 /* Coordinator */,
 				C14695AC2C2BA6C200A75D46 /* CustomViews */,
 				C14695A22C2BA36900A75D46 /* Scenes */,
 				C146958F2C2B9AFD00A75D46 /* CustomTabBarWithCenterButtonApp.swift */,
@@ -80,6 +114,8 @@
 		C14695A22C2BA36900A75D46 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C112E6772C302D890082D661 /* AccountSettings */,
+				C112E6742C302D740082D661 /* ProductDetail */,
 				C14695A92C2BA3E200A75D46 /* Main */,
 				C14695A42C2BA38100A75D46 /* Profile */,
 				C14695A32C2BA37B00A75D46 /* Home */,
@@ -202,7 +238,11 @@
 				C14695AF2C2BA6E000A75D46 /* CustomTabBarView.swift in Sources */,
 				C14695902C2B9AFD00A75D46 /* CustomTabBarWithCenterButtonApp.swift in Sources */,
 				C14695A62C2BA39100A75D46 /* HomeView.swift in Sources */,
+				C112E6732C302C570082D661 /* Route.swift in Sources */,
 				C14695A82C2BA39900A75D46 /* ProfileView.swift in Sources */,
+				C112E6712C302C4E0082D661 /* Coordinator.swift in Sources */,
+				C112E6762C302D840082D661 /* ProductDetailView.swift in Sources */,
+				C112E6792C302D960082D661 /* AccountSettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +384,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,7 +414,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
