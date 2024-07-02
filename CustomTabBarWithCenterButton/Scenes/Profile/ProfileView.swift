@@ -8,10 +8,18 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @EnvironmentObject private var coordinator: Coordinator
     var body: some View {
         ZStack {
             Color.purple.opacity(0.3)
-            Text("Profile View")
+            VStack {
+                Text("Profile View")
+                Button {
+                    coordinator.push(.AccountSettings)
+                } label: {
+                    Text("Go To Account Settings")
+                }
+            }
         }
     }
 }

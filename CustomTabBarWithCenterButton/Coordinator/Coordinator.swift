@@ -19,7 +19,7 @@ class Coordinator: ObservableObject {
     }
     
     func popToRoot() {
-        path.removeLast()
+        path.removeLast(path.count)
     }
     
     @ViewBuilder
