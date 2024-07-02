@@ -11,6 +11,7 @@ struct MainView: View {
     @State private var selectedTab = "homeTab"
     @StateObject private var homeCoordinator = Coordinator()
     @StateObject private var profileCoordinator = Coordinator()
+    @State private var tabVisible: Bool = true
     
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
@@ -33,17 +34,20 @@ struct MainView: View {
                 .tag("profileTab")
             }
             
-            CustomTabBarView { index in
-                switch index {
-                case 0:
-                    selectedTab = "homeTab"
-                case 2:
-                    selectedTab = "profileTab"
-                default:
-                    selectedTab = "homeTab"
+            if tabVisible {
+                CustomTabBarView { index in
+                    switch index {
+                    case 0:
+                        selectedTab = "homeTab"
+                    case 2:
+                        selectedTab = "profileTab"
+                    default:
+                        selectedTab = "homeTab"
+                    }
                 }
             }
         }
+        .environment(\.tabVisibility, $tabVisible)
     }
 }
 

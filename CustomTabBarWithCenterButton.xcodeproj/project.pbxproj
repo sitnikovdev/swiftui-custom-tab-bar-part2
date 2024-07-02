@@ -19,6 +19,7 @@
 		C14695A82C2BA39900A75D46 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14695A72C2BA39900A75D46 /* ProfileView.swift */; };
 		C14695AB2C2BA3F100A75D46 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14695AA2C2BA3F100A75D46 /* MainView.swift */; };
 		C14695AF2C2BA6E000A75D46 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14695AE2C2BA6E000A75D46 /* CustomTabBarView.swift */; };
+		C1C74C872C33CEAF00D043FE /* TabVisibilityKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C74C862C33CEAF00D043FE /* TabVisibilityKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		C14695A72C2BA39900A75D46 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C14695AA2C2BA3F100A75D46 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C14695AE2C2BA6E000A75D46 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		C1C74C862C33CEAF00D043FE /* TabVisibilityKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVisibilityKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		C146958E2C2B9AFD00A75D46 /* CustomTabBarWithCenterButton */ = {
 			isa = PBXGroup;
 			children = (
+				C1C74C852C33CE8900D043FE /* EnvironmentKeys */,
 				C112E66F2C302C320082D661 /* Coordinator */,
 				C14695AC2C2BA6C200A75D46 /* CustomViews */,
 				C14695A22C2BA36900A75D46 /* Scenes */,
@@ -161,6 +164,14 @@
 				C14695AE2C2BA6E000A75D46 /* CustomTabBarView.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C1C74C852C33CE8900D043FE /* EnvironmentKeys */ = {
+			isa = PBXGroup;
+			children = (
+				C1C74C862C33CEAF00D043FE /* TabVisibilityKey.swift */,
+			);
+			path = EnvironmentKeys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C74C872C33CEAF00D043FE /* TabVisibilityKey.swift in Sources */,
 				C14695922C2B9AFD00A75D46 /* ContentView.swift in Sources */,
 				C14695AB2C2BA3F100A75D46 /* MainView.swift in Sources */,
 				C14695AF2C2BA6E000A75D46 /* CustomTabBarView.swift in Sources */,
