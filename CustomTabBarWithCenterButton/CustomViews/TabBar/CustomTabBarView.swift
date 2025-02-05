@@ -28,7 +28,7 @@ struct CustomTabBarView: View {
                             Button {
                                 withAnimation(Animation.interactiveSpring(dampingFraction: 2)) {
                                     selectedTab = image
-                                }
+                                } // Button: action
                                 selectedIndex?(tabs.firstIndex(of: image) ?? 0)
                             } label: {
                                 Image(systemName: image)
@@ -38,26 +38,15 @@ struct CustomTabBarView: View {
                                     .foregroundColor(image == selectedTab ? getIconColor(image: image) : Color.black)
                                     .background(Color.white.opacity(selectedTab == image ? 1 : 0))
                                     .foregroundStyle(.blue)
-                            }
+                            }// Button: label
                             .frame(width: 60, height: 32)
-                        }
+                        } // else
                         Spacer()
-                    }
+                    } // ForEach
                 } //HStack
                 .padding(.horizontal, 50)
                 .padding(.vertical, 10)
-                
-                Button {
-                    //TODO:
-                } label: {
-                    Image(systemName: "plus.circle.fill")
-                        .resizable()
-                        .frame(width: 60, height: 60)
-                        .foregroundStyle(.red)
-                        .background(Circle().fill(.white))
-                }
-                .offset(y: -35)
-                
+
             } //ZStack
         } //VStack
         .frame(maxWidth: .infinity)
